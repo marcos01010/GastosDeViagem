@@ -8,9 +8,10 @@
     tools:context=".MainActivity">
 
     <EditText
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:hint="@string/distancia"/>
 
     <TextView
@@ -20,6 +21,7 @@
         android:layout_gravity="center"/>
 
     <EditText
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -31,6 +33,7 @@
         android:text="@string/preco_litro"
         android:layout_gravity="center"/>
     <EditText
+        android:inputType="numberDecimal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -56,13 +59,20 @@
         android:layout_marginTop="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/darkBlue"
         android:text="R$ 0"
         android:layout_gravity="center"/>
 
     <Button
+        android:id="@+id/btnCalcular"
+        android:onClick="teste"
         android:layout_marginTop="16dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/lightGreen"
+        android:padding="28dp"
         android:text="Calcular"/>
 
 </LinearLayout>
